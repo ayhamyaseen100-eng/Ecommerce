@@ -21,7 +21,7 @@ const [serverErrors,setServerErrors] = useState([]);// for rerender
     const registerhand = async(data)=>{
         //  console.log(data);//بعد ما فحصت انو الداتا صح بتوصل بعمل تراي كاتش
 try{
-const response = await axios.post(`${import.meta.env.VITE_BURL}/auth/Account/Register` , data)
+const response = await axios.post(`${import.meta.env.VITE_BURL}/auth/Account/Register`, data)
 console.log(response);
 }
 catch(err){
